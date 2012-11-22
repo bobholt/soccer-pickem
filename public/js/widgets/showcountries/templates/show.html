@@ -1,0 +1,9 @@
+<div class="widget">
+	<label for="countrySelect">Country:</label>
+	<select class="countrySelect" name="countrySelect">
+		<option>--Select Country--</option>
+		<% for (var i = 0; i < data.length; i++) { %>
+	 		<option value="<%= data[i].code %>"><%= data[i].name %></option>
+		<% } %>
+	</select>
+</div>

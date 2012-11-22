@@ -1,0 +1,11 @@
+<div class="widget">
+
+	<label for="leagueSelect">League:</label>
+	<select class="leagueSelect" name="leagueSelect">
+			<option>--Select League--</option>
+		<% for (var i = 0; i < data.length; i++) { %>
+	 		<option value="<%= data[i]._id %>"><%= data[i].name %></option>
+		<% } %>
+	</select>
+
+</div>

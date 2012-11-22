@@ -1,0 +1,11 @@
+<h3>Leagues</h3>
+<table>
+	<thead>
+		<tr></tr>
+	</thead>
+	<tbody>
+		<% for (var i = 0; i < data.length; i++) { %>
+	 		<tr><td><% if (data[i].playable) { %><a href="/league/<%= data[i].name.replace(' ', '_') %>"><% } %><%= data[i].name %></a></td></tr>
+		<% } %>
+	</tbody>
+</table>
